@@ -1,8 +1,8 @@
 {
-  "version": "1.11.0",
-  "file": "CW-Compare-1.11.0.enc",
-  "sha256": "7a437734837aa33f92fc58e34c9793f8720b8ee9611301073bc6cf14c3afc549",
-  "size": 16354022,
-  "check": "Q1dVMRSBYgxjHxbsvP+xC6GJBnK1mITKdN5Z55vQuKLOuRxq8RjM5h7/P2IJ50oWHWGMpg6TPbvgnIX9HmCuLk68",
-  "notes": "- Severity is gone. Rows now sit in action groups: **Find the match** (Only in CWM, Only in RMM, Duplicate row; the original type stays as a tag), **Fix a field** (matched, but a value differs; the row names the field and both values) and **No action** (resolved or gone since last run). Colours follow the group (blue, yellow, green), not the purple AD accent.\n- New **What to do** column on every row, such as \"In CWM but no RMM device found. Search RMM for this name or serial.\" A Legend button and a one-line meaning under the filters explain each type. The Excel sheets and Summary carry the same column and legend.\n- Filter by group and by original type; pod filter, sorting and resolved marks still work. Saved resolved marks and since-last-run data need no change: item identity is unchanged, and a resolved row shows as No action.\n- AD vs CW uses the same idea: In CW only / In AD only are Find the match, stale or disabled are Fix a field, active are No action, with a What to do column and legend. Decommission candidates keep their own wording."
+  "version": "1.12.0",
+  "file": "CW-Compare-1.12.0.enc",
+  "sha256": "b3ed6fe060e5e59bbda6166fdca154d7ffe706cd2884408c901cdfd840a86efb",
+  "size": 16373168,
+  "check": "Q1dVMcbn4jBiFKEZZ5crD0b5IchU6/CXlyunDnmUoTbirJtCCJdCb3N561v4co8L0JpXU1MmtVysdk4tjGi7dQxz",
+  "notes": "- New **Present Counts** button (amber): a separate page with devices per client, Workstations, Servers, Unknown and Total columns, a Pod column and pod filter, sortable columns, a totals row, **Copy table**, **Save Excel** (title, data basis and a \"Counted and skipped\" sheet) and a **Back** button. Double-click a client for the list of devices counted and skipped, each with the reason.\n- Data basis: the loaded ConnectWise Manage Configurations. Inactive devices and repeated names are not counted; resolved items still count (resolved means reviewed, not removed). The page says so.\n- Scale Computing: node 1 counts once for the cluster, nodes 2 and up are skipped, a DR node counts as its own one. Name patterns (Node1, Node 1, N1, scale-01, DR) and the workstation/server rules (type and OS words) are in `scale-rules.json`, written next to the program on first run (git-ignored). **Reload rules** applies edits. Devices that cannot be classified land in an always-visible Unknown column.\n- These rules apply on this page only; the main compare, AD vs CW and all existing numbers are unchanged."
 }
