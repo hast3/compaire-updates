@@ -1,8 +1,8 @@
 {
-  "version": "1.9.1",
-  "file": "CW-Compare-1.9.1.enc",
-  "sha256": "bd34ac067d33e75c792b61035d558f0c39710fe0a8d21f04167cd1156ebb540e",
-  "size": 16226565,
-  "check": "Q1dVMSI4VeFJOAW6OEiVREPrnfnFLjDADv4Fobc6eDZBh6yelCG4lLz0EbIlY3Az02sLcl5II/Sj7CQ7kkGF3c/F",
-  "notes": "- AD vs CW now looks like its own tool: a purple \"\u25c6 AD vs CW\" launch button, a purple header bar titled \"AD vs CW Configurations\", purple buttons and table headings, and a purple Excel title, headers and sheet tabs. The main compare keeps its green look."
+  "version": "1.10.0",
+  "file": "CW-Compare-1.10.0.enc",
+  "sha256": "ddc1eb2489f5c95fe4705b068798990ede15c220a0ccea7365b40b549f001934",
+  "size": 16345238,
+  "check": "Q1dVMQnxcXs736Hnl6r79tudPRJGlpbrwLVAjPAC/6QpQWSqbF4E0y8FMbYiZRvovRk5k3prAWuzqddKUv839oCy",
+  "notes": "- History: every Manage, RMM and AD export the app sees is recorded once (by file content) in `snapshots/history/` next to the program, with file name, file date, hash and the normalized item list. It is local and never in git. A new **History** button shows the timeline; select any two exports of the same kind and **Compare selected** to see Added, Removed, Changed (with the field that changed, such as status or last logon) and Unchanged, filtered by kind and pod, with Copy and Export to Excel. **Latest two** compares the two newest of a kind.\n- Two exports of the same kind in the folder (an older and a newer Manage CSV, or two RMM workbooks) now open the History comparison straight away instead of asking for the other export. A new export also shows a one-line note of what moved since the previous one.\n- Storage is capped at the newest 50 recorded exports (the **Keep** box in History, saved in `settings.json`). **Clear history** deletes everything after a confirmation.\n- Why since-last-run missed this: it only compared the mismatch list between two runs of the same folder, had nothing on the first run, and could not compare two files placed together."
 }
