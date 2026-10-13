@@ -1,8 +1,8 @@
 {
-  "version": "1.13.0",
-  "file": "CW-Compare-1.13.0.enc",
-  "sha256": "1101e5262752c19037b56b26e6f2eeeb62c0aa1f9a4bdf9b110b53ab54db358c",
-  "size": 16380555,
-  "check": "Q1dVMSwJY/0xkd+TpCevbqSHjYWkHP7xIfCPQUkT+ZW7coAu/+GG4oxBuwugHCY4cplw1YjmvD+lX80wv5DHQY1L",
-  "notes": "- Present Counts: **click any number** (client cells and the totals row) for a side panel listing the configurations behind it: name, type, OS, status, client, classification, the rule that decided it, and Scale counted/skipped with the reason. Search, **Also show skipped**, **Copy rows**, **Save Excel**, **Save CSV**, **\u2715 Close** or Esc. The counted list always equals the number clicked (selftest covers every cell and the totals row).\n- Server count fix: ESX hosts, Hyper-V and other \"virtual host\" types were landing in Unknown; they now count as servers (`server_type_contains` gains \"esx\", \"virtual host\", \"hyper-v\", \"hyperv\"). An untouched 1.12 `scale-rules.json` is upgraded automatically; an edited one is left alone.\n- Client names that differ only by case or extra spaces are now one client.\n- New setting `skip_duplicate_names` (default true) so repeated names inside a client can be counted if wanted."
+  "version": "1.14.0",
+  "file": "CW-Compare-1.14.0.enc",
+  "sha256": "42ac68bb9ff788897bba781ca36aa1bda8c89b3bd7cb745bddaa1db3e5dfa6d6",
+  "size": 16384746,
+  "check": "Q1dVMUeMSVnX3n2yt+u8DCYcWpF0PvO3QV40gXtgvCbC1VXE1oNvrKb5n+cen0Zs0S1YFBPpBKZgLMmkib7eAnM6",
+  "notes": "- Front screen layout pass, no change to behavior, data or counts. Numbered flow: 1 Folder, 2 Client name + Compare, 3 Review. Filters regrouped: Company, Action, resolved and Pod on one row; class, type, since last run and Scale nodes under \"Narrow by\"; Ticket list, Pod summary and Review matches sit beside them.\n- New **Other tools** row: \u25c6 AD vs CW (purple), Present Counts (now amber like its page) and History.\n- New **More** menu: Column details, legend, Try the sample, Check for updates, About. These buttons left the Compare row; Legend and Pod summary no longer crowd the tools row.\n- Hover hints on the main buttons, a shorter subtitle that wraps with the window, larger captions, an empty-state message over the table, and a bottom status line with folder, files found, last run and version. Minimum window 1020x640."
 }
