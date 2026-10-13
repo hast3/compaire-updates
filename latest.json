@@ -1,8 +1,8 @@
 {
-  "version": "1.7.0",
-  "file": "CW-Compare-1.7.0.enc",
-  "sha256": "dd87c11012293129dfe4152822263109ae7103463e6553caa27020a5582c9c51",
-  "size": 16194725,
-  "check": "Q1dVMZo61HTZVofBuMpDUC6BPqtvz28uK15v7En3fKrByPO+nG9hPxxuvaCWNwNxSkbRl0+jp2AiYShc1QcFWl6t",
-  "notes": "- Ticket list: one click copies, or saves as .txt, the \"Missing in CW\" or \"Missing in RMM\" devices grouped by client. It follows the Pod and other filters and leaves out resolved items.\n- Since last run: each comparison is remembered per client in `snapshots/last-run.json` next to the exe (never in the inbox or git). Items are flagged New or Still open, items gone from the list are Resolved in source. There is a count line, a filter and a column in the app and in the Excel output.\n- Pod summary: a window in the app and a \"Pod summary\" sheet in the workbook with rows, mismatches, resolved and open per client, grouped Green, Grey, Gold with subtotals.\n- Review matches: suggests client and device names that exact matching missed (conservative threshold). Accept or reject each; choices are kept in `matches.json` and accepted pairs apply on every later run."
+  "version": "1.8.0",
+  "file": "CW-Compare-1.8.0.enc",
+  "sha256": "ebf380ec6a3009c3a770378a8f9f87c7efe6b58889fa689c584435ccd4619f13",
+  "size": 16218882,
+  "check": "Q1dVMcwclXVvgsTI8Bndu9MdR6qCEuB2/ifM8IxOzjmtzwvrCL8quGN5oPZpef+W/sR7E//kGZ9u9glH0xRs+yOQ",
+  "notes": "- AD vs CW: new \"AD vs CW\" button opens a window that compares an Active Directory computer export (CSV or Excel) with the ConnectWise Manage Configurations. Each machine is In AD and CW, In CW only (no AD object) or In AD only (untracked in CW), with last logon age.\n- Decommission candidates: stale in AD (no logon or password change within the threshold: 30, 60, 90, 180, 365 or a custom number of days) or disabled and stale. Wording is always \"candidate\". Servers are labelled \"Server - review carefully\" and domain controllers \"do not remove\". A reason column explains each row.\n- AD columns are recognised by common names (Name, cn, sAMAccountName, DNSHostName, OperatingSystem, Enabled, LastLogonDate, lastLogonTimestamp, PasswordLastSet, whenCreated, DistinguishedName). Dates can be ISO, US/EU text, Excel serials or 18-digit FILETIME.\n- Export-ADComputers.ps1 for techs, plus Copy export command and Save export script buttons.\n- Fuzzy name review applies to near-miss names between the two systems. Excel output has Summary, All machines, Decommission candidates, In CW only and In AD only sheets."
 }
