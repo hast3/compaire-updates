@@ -1,0 +1,8 @@
+{
+  "version": "1.4.0",
+  "file": "CW-Compare-1.4.0.enc",
+  "sha256": "627c509ede00f8ac13fb81690338f24988c3b4fd6087bd04080d84e632c51646",
+  "size": 16160290,
+  "check": "Q1dVMQN0BsaS72iIJmIF/mZuO43JVaxMPi554eeZqm7qYlX8N6CaJcMG6GLfIJraOa2ND5fIEzMM9j1pQvSDIwer",
+  "notes": "- Added a **Check for updates** button. It reads the latest GitHub release, shows the new version and its notes, and asks before installing.\n- The portable exe verifies the download against the published SHA256, keeps the old exe as `CW Compare.exe.bak`, and restarts. Inbox, settings and workbooks are never touched.\n- Runs from source: updates with `git pull` when the folder is a git checkout, otherwise opens the download page.\n- The private repo is read with a read-only token sealed in the exe by a team passphrase, asked for once on first use of the button and remembered per Windows user (DPAPI)."
+}
