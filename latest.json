@@ -1,8 +1,8 @@
 {
-  "version": "1.9.0",
-  "file": "CW-Compare-1.9.0.enc",
-  "sha256": "44dd2eaf032880c5505859c288fb74ca70a1a9835f35c6f0ea99854cf9a4412e",
-  "size": 16224422,
-  "check": "Q1dVMcDk4+aLi23OOSQ6POjTtZim8cK+2Bhmlpp3wfXwPqDGtviTEKRA992RLBFFKmTGVGf249JEt+0T/kLIDNIf",
-  "notes": "- Folder controls: **Browse** picks the folder that holds the exports (remembered in `settings.json`), the current path is shown, and **Open folder** opens it in Explorer, creating it first if it is missing. **Rescan** is now **Refresh**.\n- Late files: the app rescans when the window gets focus and every few seconds, so exports dropped in after launch load by themselves. Files still being copied (size or time changing, or locked) are skipped and retried. An empty folder shows \"No files yet: drop exports in the folder or click Browse\" instead of an error.\n- AD vs CW has the same Browse, Open folder and Refresh. It picks up an AD export (a file named like `AD-Computers.csv`) from the folder and compares automatically. AD exports are no longer mistaken for Manage or RMM exports."
+  "version": "1.9.1",
+  "file": "CW-Compare-1.9.1.enc",
+  "sha256": "bd34ac067d33e75c792b61035d558f0c39710fe0a8d21f04167cd1156ebb540e",
+  "size": 16226565,
+  "check": "Q1dVMSI4VeFJOAW6OEiVREPrnfnFLjDADv4Fobc6eDZBh6yelCG4lLz0EbIlY3Az02sLcl5II/Sj7CQ7kkGF3c/F",
+  "notes": "- AD vs CW now looks like its own tool: a purple \"\u25c6 AD vs CW\" launch button, a purple header bar titled \"AD vs CW Configurations\", purple buttons and table headings, and a purple Excel title, headers and sheet tabs. The main compare keeps its green look."
 }
