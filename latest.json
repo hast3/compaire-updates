@@ -1,8 +1,8 @@
 {
-  "version": "1.8.0",
-  "file": "CW-Compare-1.8.0.enc",
-  "sha256": "ebf380ec6a3009c3a770378a8f9f87c7efe6b58889fa689c584435ccd4619f13",
-  "size": 16218882,
-  "check": "Q1dVMcwclXVvgsTI8Bndu9MdR6qCEuB2/ifM8IxOzjmtzwvrCL8quGN5oPZpef+W/sR7E//kGZ9u9glH0xRs+yOQ",
-  "notes": "- AD vs CW: new \"AD vs CW\" button opens a window that compares an Active Directory computer export (CSV or Excel) with the ConnectWise Manage Configurations. Each machine is In AD and CW, In CW only (no AD object) or In AD only (untracked in CW), with last logon age.\n- Decommission candidates: stale in AD (no logon or password change within the threshold: 30, 60, 90, 180, 365 or a custom number of days) or disabled and stale. Wording is always \"candidate\". Servers are labelled \"Server - review carefully\" and domain controllers \"do not remove\". A reason column explains each row.\n- AD columns are recognised by common names (Name, cn, sAMAccountName, DNSHostName, OperatingSystem, Enabled, LastLogonDate, lastLogonTimestamp, PasswordLastSet, whenCreated, DistinguishedName). Dates can be ISO, US/EU text, Excel serials or 18-digit FILETIME.\n- Export-ADComputers.ps1 for techs, plus Copy export command and Save export script buttons.\n- Fuzzy name review applies to near-miss names between the two systems. Excel output has Summary, All machines, Decommission candidates, In CW only and In AD only sheets."
+  "version": "1.9.0",
+  "file": "CW-Compare-1.9.0.enc",
+  "sha256": "44dd2eaf032880c5505859c288fb74ca70a1a9835f35c6f0ea99854cf9a4412e",
+  "size": 16224422,
+  "check": "Q1dVMcDk4+aLi23OOSQ6POjTtZim8cK+2Bhmlpp3wfXwPqDGtviTEKRA992RLBFFKmTGVGf249JEt+0T/kLIDNIf",
+  "notes": "- Folder controls: **Browse** picks the folder that holds the exports (remembered in `settings.json`), the current path is shown, and **Open folder** opens it in Explorer, creating it first if it is missing. **Rescan** is now **Refresh**.\n- Late files: the app rescans when the window gets focus and every few seconds, so exports dropped in after launch load by themselves. Files still being copied (size or time changing, or locked) are skipped and retried. An empty folder shows \"No files yet: drop exports in the folder or click Browse\" instead of an error.\n- AD vs CW has the same Browse, Open folder and Refresh. It picks up an AD export (a file named like `AD-Computers.csv`) from the folder and compares automatically. AD exports are no longer mistaken for Manage or RMM exports."
 }
