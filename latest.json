@@ -1,8 +1,8 @@
 {
-  "version": "1.6.0",
-  "file": "CW-Compare-1.6.0.enc",
-  "sha256": "345215574263af8ceb4e40dda50fa4024bf3af062a3ec4e0613cfd91f15745c2",
-  "size": 16170270,
-  "check": "Q1dVMVHj3T5QTbqIrPjJi0lvbHKSbk5SRugA4ZtDyh3JLMB2kX6szDKNZHR+EgCWbs8C34AaMn3UKv6OgylpQXHD",
-  "notes": "- Pods: each client is Green, Grey or Gold. The mapping is the editable `pods.json` next to the exe (updates never overwrite it). Unlisted clients are Grey; any name containing \"TTx\" is Gold. New Pod column, Pod filter (remembered) and Pod sort in the app, and a Pod column in the Excel output.\n- Excel: the table now starts on row 1 with only the header row frozen and filters on, so the window resizes normally. Totals and notes moved to a Summary sheet.\n- Saving while the workbook is open in Excel no longer crashes; the original is left intact and a timestamped copy is saved.\n- Update dialog and README note that Windows may show a SmartScreen prompt (More info, then Run anyway)."
+  "version": "1.7.0",
+  "file": "CW-Compare-1.7.0.enc",
+  "sha256": "dd87c11012293129dfe4152822263109ae7103463e6553caa27020a5582c9c51",
+  "size": 16194725,
+  "check": "Q1dVMZo61HTZVofBuMpDUC6BPqtvz28uK15v7En3fKrByPO+nG9hPxxuvaCWNwNxSkbRl0+jp2AiYShc1QcFWl6t",
+  "notes": "- Ticket list: one click copies, or saves as .txt, the \"Missing in CW\" or \"Missing in RMM\" devices grouped by client. It follows the Pod and other filters and leaves out resolved items.\n- Since last run: each comparison is remembered per client in `snapshots/last-run.json` next to the exe (never in the inbox or git). Items are flagged New or Still open, items gone from the list are Resolved in source. There is a count line, a filter and a column in the app and in the Excel output.\n- Pod summary: a window in the app and a \"Pod summary\" sheet in the workbook with rows, mismatches, resolved and open per client, grouped Green, Grey, Gold with subtotals.\n- Review matches: suggests client and device names that exact matching missed (conservative threshold). Accept or reject each; choices are kept in `matches.json` and accepted pairs apply on every later run."
 }
