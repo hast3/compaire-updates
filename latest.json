@@ -1,8 +1,8 @@
 {
-  "version": "1.5.0",
-  "file": "CW-Compare-1.5.0.enc",
-  "sha256": "426aed474e528242200f8483628b4523a6ebcb99334b25f238cc98a2892b2777",
-  "size": 16165393,
-  "check": "Q1dVMdw+AQclSL2c8X9KjSyBAUhepnd1/qeTdv5rKDPj1CQs0GOrAF6JY78CBuLPNkJpRbtaLabbtW9RJ1R3bRs9",
-  "notes": "- Names and rows can be copied: select rows and press Ctrl+C, or right-click for Copy name / Copy row.\n- Conflicts can be marked resolved (right-click, Mark resolved). Saved on this PC in settings.json, never in the inbox files. A Show/Hide resolved filter and a Resolved count were added.\n- Excel output: filters now carry Excel's hidden _FilterDatabase name, and a client name with an ampersand no longer breaks the print header."
+  "version": "1.6.0",
+  "file": "CW-Compare-1.6.0.enc",
+  "sha256": "345215574263af8ceb4e40dda50fa4024bf3af062a3ec4e0613cfd91f15745c2",
+  "size": 16170270,
+  "check": "Q1dVMVHj3T5QTbqIrPjJi0lvbHKSbk5SRugA4ZtDyh3JLMB2kX6szDKNZHR+EgCWbs8C34AaMn3UKv6OgylpQXHD",
+  "notes": "- Pods: each client is Green, Grey or Gold. The mapping is the editable `pods.json` next to the exe (updates never overwrite it). Unlisted clients are Grey; any name containing \"TTx\" is Gold. New Pod column, Pod filter (remembered) and Pod sort in the app, and a Pod column in the Excel output.\n- Excel: the table now starts on row 1 with only the header row frozen and filters on, so the window resizes normally. Totals and notes moved to a Summary sheet.\n- Saving while the workbook is open in Excel no longer crashes; the original is left intact and a timestamped copy is saved.\n- Update dialog and README note that Windows may show a SmartScreen prompt (More info, then Run anyway)."
 }
