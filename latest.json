@@ -1,8 +1,8 @@
 {
-  "version": "1.12.0",
-  "file": "CW-Compare-1.12.0.enc",
-  "sha256": "b3ed6fe060e5e59bbda6166fdca154d7ffe706cd2884408c901cdfd840a86efb",
-  "size": 16373168,
-  "check": "Q1dVMcbn4jBiFKEZZ5crD0b5IchU6/CXlyunDnmUoTbirJtCCJdCb3N561v4co8L0JpXU1MmtVysdk4tjGi7dQxz",
-  "notes": "- New **Present Counts** button (amber): a separate page with devices per client, Workstations, Servers, Unknown and Total columns, a Pod column and pod filter, sortable columns, a totals row, **Copy table**, **Save Excel** (title, data basis and a \"Counted and skipped\" sheet) and a **Back** button. Double-click a client for the list of devices counted and skipped, each with the reason.\n- Data basis: the loaded ConnectWise Manage Configurations. Inactive devices and repeated names are not counted; resolved items still count (resolved means reviewed, not removed). The page says so.\n- Scale Computing: node 1 counts once for the cluster, nodes 2 and up are skipped, a DR node counts as its own one. Name patterns (Node1, Node 1, N1, scale-01, DR) and the workstation/server rules (type and OS words) are in `scale-rules.json`, written next to the program on first run (git-ignored). **Reload rules** applies edits. Devices that cannot be classified land in an always-visible Unknown column.\n- These rules apply on this page only; the main compare, AD vs CW and all existing numbers are unchanged."
+  "version": "1.13.0",
+  "file": "CW-Compare-1.13.0.enc",
+  "sha256": "1101e5262752c19037b56b26e6f2eeeb62c0aa1f9a4bdf9b110b53ab54db358c",
+  "size": 16380555,
+  "check": "Q1dVMSwJY/0xkd+TpCevbqSHjYWkHP7xIfCPQUkT+ZW7coAu/+GG4oxBuwugHCY4cplw1YjmvD+lX80wv5DHQY1L",
+  "notes": "- Present Counts: **click any number** (client cells and the totals row) for a side panel listing the configurations behind it: name, type, OS, status, client, classification, the rule that decided it, and Scale counted/skipped with the reason. Search, **Also show skipped**, **Copy rows**, **Save Excel**, **Save CSV**, **\u2715 Close** or Esc. The counted list always equals the number clicked (selftest covers every cell and the totals row).\n- Server count fix: ESX hosts, Hyper-V and other \"virtual host\" types were landing in Unknown; they now count as servers (`server_type_contains` gains \"esx\", \"virtual host\", \"hyper-v\", \"hyperv\"). An untouched 1.12 `scale-rules.json` is upgraded automatically; an edited one is left alone.\n- Client names that differ only by case or extra spaces are now one client.\n- New setting `skip_duplicate_names` (default true) so repeated names inside a client can be counted if wanted."
 }
