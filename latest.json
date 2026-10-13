@@ -1,8 +1,8 @@
 {
   "version": "1.4.0",
   "file": "CW-Compare-1.4.0.enc",
-  "sha256": "0249429352293406ae681f02c99079e10458171c8d5a21432d2a171d5ee84fca",
-  "size": 16161719,
-  "check": "Q1dVMfd7kunU+efNabcAThFuwQmk1lrWuBBorgv5tg8ACQDUKxqL7eDfdzi2FJfaZgGQ2UBFzcdq3GNNj+LxRvT8",
+  "sha256": "976215194b29a8e9953d7ba2b19fa185a8bbdc1d5a3891f567d95fc1121c0eda",
+  "size": 16161454,
+  "check": "Q1dVMUVwtoM9CM+0IqOX6IcPv3ILeZySlmwT444j0QZoz+Zpe6U/psNzp6RL3+FRS4+9BVe8IyUjociISVZ2LXLR",
   "notes": "- Added a **Check for updates** button. It reads the latest GitHub release, shows the new version and its notes, and asks before installing.\n- Updates are encrypted (AES-256-GCM, scrypt key from the team passphrase) and published in a public updates repo, so the app needs no credentials. The passphrase is asked for once on first use of the button and remembered per Windows user (DPAPI). A wrong passphrase says \"Incorrect passphrase\".\n- The portable exe verifies the decrypted update against its published SHA256, keeps the old exe as `CW Compare.exe.bak`, and restarts. Inbox, settings and workbooks are never touched.\n- Runs from source: updates with `git pull` when the folder is a git checkout, otherwise opens the download page."
 }
