@@ -1,8 +1,8 @@
 {
-  "version": "1.19.0",
-  "file": "CW-Compare-1.19.0.enc",
-  "sha256": "6d8d5a92798b00deb84e6aa40e2afb16699de2402790b47d5b961cb17c8d584c",
-  "size": 16415236,
-  "check": "Q1dVMVVlreo4X7+92Sgm4VLOnODSpZ77/ftcHfm5DHobr4Zt6nybmdQTTuORfjnlGN7ZmpSd0MqmRNEb8RwOmBNI",
-  "notes": "- New \"What your data can do\" panel on the front screen. It reads the column headers (never the file names) of every file in the inbox, says what each one is (Manage list, RMM list, RMM software report, AD export), and lists each tool as Ready or Not ready. A tool that is not ready says what is missing and how to export it, and its button is greyed out. It refreshes on Refresh, folder change and when files change. Only the start of each file is read, so it is instant even on 45,000-row exports."
+  "version": "1.19.1",
+  "file": "CW-Compare-1.19.1.enc",
+  "sha256": "3d94819aa9fb3580e2495d08774b9a98339d48d7015dd274a1743fcde95ba6c8",
+  "size": 16415445,
+  "check": "Q1dVMZbToNq29Dk+mDlwehrT3OKungxqmsL/7bzgF+0q224goElE5iIdrS1CNW+UKjjJCiEgqhV3ds36EbxHgGF8",
+  "notes": "- An RMM installed-software report no longer produces \"Duplicate row\" findings. It has one row per computer and application, so repeated names are expected; the file is now read as distinct computers (GreenPod: 45,066 rows become 896 computers, and the front screen says \"896 computers, from 45066 software rows\"). Duplicate checks still run on the Manage list and real RMM device lists."
 }
