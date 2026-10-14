@@ -1,8 +1,8 @@
 {
-  "version": "1.17.0",
-  "file": "CW-Compare-1.17.0.enc",
-  "sha256": "076878f721d09d92b45941936612a825622e00645de85bc2952f487cf99e7b21",
-  "size": 16402894,
-  "check": "Q1dVMfhnPyUI5TRUGqgkf4NbgiVcZMKwIcKE3dM2jXuguWbCF4mv1T0VTOKW4rm1/mLP+P0En4ofmu5P5xeEIBdx",
-  "notes": "- **Missing AV** now needs only ONE of SentinelOne or Huntress: a computer with either (or both) is **Covered**, and only a computer with neither is flagged. The \"only one of the two\" result is gone, along with its wording and its sheet in the Excel export (sheets are now Summary, All computers, Neither, Unknown). Unknown (not in the RMM report) is unchanged. If you edited `av-rules.json`, the extra products you add are alternatives too.\n- Full-screen / maximised layout: long text in the front card (client list hint, Manage/RMM file names, folder, status line) no longer pushes the grid wider than the window, which squeezed the section labels so they showed cut off (\"ith t\", \"ptio\"). Those labels now wrap to the window width."
+  "version": "1.18.0",
+  "file": "CW-Compare-1.18.0.enc",
+  "sha256": "1951ebd5accad0036b0d9f7de9622e2aa2b8107269a082c45c62dde9ffbc85c6",
+  "size": 16404451,
+  "check": "Q1dVMT6mSF8nnIWum+a0ZklFz9qL0apNISYNN/Hbkfm06sTx6+PzL0tJaPxBxasaVyPQ+rJzKKgSb9fCJ0/hWhPQ",
+  "notes": "- The \"More\" bar is now themed: the same grey as the header in light and dark (it was the always-white system menu bar).\n- The Missing AV window follows the theme: entry fields and the \"Neither\" row colour now match light and dark."
 }
