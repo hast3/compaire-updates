@@ -1,8 +1,8 @@
 {
-  "version": "1.15.0",
-  "file": "CW-Compare-1.15.0.enc",
-  "sha256": "a5b1a9eb3fe604d2fd44817727bdd6b0fd610f1646efb333c8e6ae7833c64047",
-  "size": 16385902,
-  "check": "Q1dVMW+NEacG4LwlRCamN5g4kBOrPU8rEnHREzdFrppQ9OxJUnf79c8Zy5EhRLDEvCvtSbgk1a/90P126dyYXbu6",
-  "notes": "- The window's title bar now follows the theme: dark mode gives a dark title bar with light text, light mode a charcoal one matching the header. Each theme carries `titlebar` and `titlebar_text` colours, applied at launch from the saved theme and whenever the Dark switch is flipped (Windows 11 colours; Windows 10 gets the dark/light title bar only).\n- Reminder: **Check for updates** lives in the **More** menu in the menu bar."
+  "version": "1.16.0",
+  "file": "CW-Compare-1.16.0.enc",
+  "sha256": "4edf0f91630c190f0d3e8532fc5b842ff80e63a414ec6366cc5ee45168cc1f85",
+  "size": 16401183,
+  "check": "Q1dVMRAV45T9y2J86TNpRP0onG0Vdymq5QBh5hQZvfIRmtkoXnYH3dNfhFtj0mod3v2Q2RrN2kr+sWIyqGkYAtFA",
+  "notes": "- New **Missing AV** tool (red, in the Other tools row). Pick a ConnectWise Manage computer list and an RMM software report (it finds them in the folder, or use Browse). Each computer is matched by name (same normalisation as AD vs CW: case, FQDN vs short name, spaces) and shows Both, SentinelOne only, Huntress only, Neither, or Unknown when the computer is not in the RMM report (never reported as \"no AV\").\n- Products are found by name patterns on the application name and publisher, kept in the editable `av-rules.json` next to the program (written on first use, git-ignored; **Reload rules** applies edits). ESX and virtual host configurations are left out by default (`skip_type_contains`).\n- Filter by result, copy rows, **Save Excel** (Summary, All computers, Neither, Only one, Unknown sheets) or **Save CSV**."
 }
