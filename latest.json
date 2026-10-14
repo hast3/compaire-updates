@@ -1,8 +1,8 @@
 {
-  "version": "1.18.0",
-  "file": "CW-Compare-1.18.0.enc",
-  "sha256": "1951ebd5accad0036b0d9f7de9622e2aa2b8107269a082c45c62dde9ffbc85c6",
-  "size": 16404451,
-  "check": "Q1dVMT6mSF8nnIWum+a0ZklFz9qL0apNISYNN/Hbkfm06sTx6+PzL0tJaPxBxasaVyPQ+rJzKKgSb9fCJ0/hWhPQ",
-  "notes": "- The \"More\" bar is now themed: the same grey as the header in light and dark (it was the always-white system menu bar).\n- The Missing AV window follows the theme: entry fields and the \"Neither\" row colour now match light and dark."
+  "version": "1.18.1",
+  "file": "CW-Compare-1.18.1.enc",
+  "sha256": "51360a85c38b6e42a2226821ace66e4fb5099d4a8f6325b4c57038092581047e",
+  "size": 16404809,
+  "check": "Q1dVMeiNAFv/Y7vzYMCL9uWvdUTo5HfEa9cQwSoXWxnU7tmpdYqh1Ayi2axVE81GXjzsQHB2pkQCmsrmpLi+SRCr",
+  "notes": "- Fixed the slow start and \"not responding\" window on big exports. Matching unpaired devices re-normalised every name millions of times on the main thread (about 25 seconds with the 900-computer GreenPod pair); names are now cached and the matching is a lookup, so the same load takes about a second."
 }
