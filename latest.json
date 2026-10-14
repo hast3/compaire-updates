@@ -1,8 +1,8 @@
 {
-  "version": "1.16.0",
-  "file": "CW-Compare-1.16.0.enc",
-  "sha256": "4edf0f91630c190f0d3e8532fc5b842ff80e63a414ec6366cc5ee45168cc1f85",
-  "size": 16401183,
-  "check": "Q1dVMRAV45T9y2J86TNpRP0onG0Vdymq5QBh5hQZvfIRmtkoXnYH3dNfhFtj0mod3v2Q2RrN2kr+sWIyqGkYAtFA",
-  "notes": "- New **Missing AV** tool (red, in the Other tools row). Pick a ConnectWise Manage computer list and an RMM software report (it finds them in the folder, or use Browse). Each computer is matched by name (same normalisation as AD vs CW: case, FQDN vs short name, spaces) and shows Both, SentinelOne only, Huntress only, Neither, or Unknown when the computer is not in the RMM report (never reported as \"no AV\").\n- Products are found by name patterns on the application name and publisher, kept in the editable `av-rules.json` next to the program (written on first use, git-ignored; **Reload rules** applies edits). ESX and virtual host configurations are left out by default (`skip_type_contains`).\n- Filter by result, copy rows, **Save Excel** (Summary, All computers, Neither, Only one, Unknown sheets) or **Save CSV**."
+  "version": "1.17.0",
+  "file": "CW-Compare-1.17.0.enc",
+  "sha256": "076878f721d09d92b45941936612a825622e00645de85bc2952f487cf99e7b21",
+  "size": 16402894,
+  "check": "Q1dVMfhnPyUI5TRUGqgkf4NbgiVcZMKwIcKE3dM2jXuguWbCF4mv1T0VTOKW4rm1/mLP+P0En4ofmu5P5xeEIBdx",
+  "notes": "- **Missing AV** now needs only ONE of SentinelOne or Huntress: a computer with either (or both) is **Covered**, and only a computer with neither is flagged. The \"only one of the two\" result is gone, along with its wording and its sheet in the Excel export (sheets are now Summary, All computers, Neither, Unknown). Unknown (not in the RMM report) is unchanged. If you edited `av-rules.json`, the extra products you add are alternatives too.\n- Full-screen / maximised layout: long text in the front card (client list hint, Manage/RMM file names, folder, status line) no longer pushes the grid wider than the window, which squeezed the section labels so they showed cut off (\"ith t\", \"ptio\"). Those labels now wrap to the window width."
 }
