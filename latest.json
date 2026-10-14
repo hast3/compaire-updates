@@ -1,8 +1,8 @@
 {
-  "version": "1.14.0",
-  "file": "CW-Compare-1.14.0.enc",
-  "sha256": "42ac68bb9ff788897bba781ca36aa1bda8c89b3bd7cb745bddaa1db3e5dfa6d6",
-  "size": 16384746,
-  "check": "Q1dVMUeMSVnX3n2yt+u8DCYcWpF0PvO3QV40gXtgvCbC1VXE1oNvrKb5n+cen0Zs0S1YFBPpBKZgLMmkib7eAnM6",
-  "notes": "- Front screen layout pass, no change to behavior, data or counts. Numbered flow: 1 Folder, 2 Client name + Compare, 3 Review. Filters regrouped: Company, Action, resolved and Pod on one row; class, type, since last run and Scale nodes under \"Narrow by\"; Ticket list, Pod summary and Review matches sit beside them.\n- New **Other tools** row: \u25c6 AD vs CW (purple), Present Counts (now amber like its page) and History.\n- New **More** menu: Column details, legend, Try the sample, Check for updates, About. These buttons left the Compare row; Legend and Pod summary no longer crowd the tools row.\n- Hover hints on the main buttons, a shorter subtitle that wraps with the window, larger captions, an empty-state message over the table, and a bottom status line with folder, files found, last run and version. Minimum window 1020x640."
+  "version": "1.15.0",
+  "file": "CW-Compare-1.15.0.enc",
+  "sha256": "a5b1a9eb3fe604d2fd44817727bdd6b0fd610f1646efb333c8e6ae7833c64047",
+  "size": 16385902,
+  "check": "Q1dVMW+NEacG4LwlRCamN5g4kBOrPU8rEnHREzdFrppQ9OxJUnf79c8Zy5EhRLDEvCvtSbgk1a/90P126dyYXbu6",
+  "notes": "- The window's title bar now follows the theme: dark mode gives a dark title bar with light text, light mode a charcoal one matching the header. Each theme carries `titlebar` and `titlebar_text` colours, applied at launch from the saved theme and whenever the Dark switch is flipped (Windows 11 colours; Windows 10 gets the dark/light title bar only).\n- Reminder: **Check for updates** lives in the **More** menu in the menu bar."
 }
