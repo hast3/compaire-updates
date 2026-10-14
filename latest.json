@@ -1,8 +1,8 @@
 {
-  "version": "1.18.1",
-  "file": "CW-Compare-1.18.1.enc",
-  "sha256": "51360a85c38b6e42a2226821ace66e4fb5099d4a8f6325b4c57038092581047e",
-  "size": 16404809,
-  "check": "Q1dVMeiNAFv/Y7vzYMCL9uWvdUTo5HfEa9cQwSoXWxnU7tmpdYqh1Ayi2axVE81GXjzsQHB2pkQCmsrmpLi+SRCr",
-  "notes": "- Fixed the slow start and \"not responding\" window on big exports. Matching unpaired devices re-normalised every name millions of times on the main thread (about 25 seconds with the 900-computer GreenPod pair); names are now cached and the matching is a lookup, so the same load takes about a second."
+  "version": "1.19.0",
+  "file": "CW-Compare-1.19.0.enc",
+  "sha256": "6d8d5a92798b00deb84e6aa40e2afb16699de2402790b47d5b961cb17c8d584c",
+  "size": 16415236,
+  "check": "Q1dVMVVlreo4X7+92Sgm4VLOnODSpZ77/ftcHfm5DHobr4Zt6nybmdQTTuORfjnlGN7ZmpSd0MqmRNEb8RwOmBNI",
+  "notes": "- New \"What your data can do\" panel on the front screen. It reads the column headers (never the file names) of every file in the inbox, says what each one is (Manage list, RMM list, RMM software report, AD export), and lists each tool as Ready or Not ready. A tool that is not ready says what is missing and how to export it, and its button is greyed out. It refreshes on Refresh, folder change and when files change. Only the start of each file is read, so it is instant even on 45,000-row exports."
 }
